@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-13T13:57:51.159162" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste" source="C:\Users\iasmi\OneDrive\Documentos\Projetos\robot\teste.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o site da Moblix" line="12">
+<kw name="Abrir Site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-13T13:57:51.361626" level="INFO">Opening browser 'chrome' to base url 'https://moblix.com.br/'.</msg>
+<arg>https://moblix.com.br/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-13T13:57:51.361626" elapsed="3.834977"/>
+</kw>
+<status status="PASS" start="2024-03-13T13:57:51.360594" elapsed="3.836009"/>
+</kw>
+<status status="PASS" start="2024-03-13T13:57:51.360594" elapsed="3.837006"/>
+</test>
+<status status="PASS" start="2024-03-13T13:57:51.161156" elapsed="4.037442"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Teste">Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
