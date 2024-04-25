@@ -4,14 +4,14 @@ Relembrando argumentos posicionais x nomeados
     Teste de Argumentos Básico     arg4=1   arg3=2   arg2=3   arg1=4
 
 Teste de Argumentos Opcionais
-    Passando argumentos opcionais como parâmetro      nome=Mayara   ultimo_nome=Fernandes
-    Passando argumentos opcionais como parâmetro      nome=Mayara   nome_do_meio=Ribeiro     ultimo_nome=Fernandes
+    Passando argumentos opcionais como parâmetro      nome=Iasmine   ultimo_nome=Silva
+    Passando argumentos opcionais como parâmetro      nome=Iasmine   nome_do_meio=Sousa     ultimo_nome=Fernandes
 
 Criando lista e dicionário via parâmetro
     [Documentation]     No Python é conhecido como "kwargs"
     Teste Criando um Dicionário     cwd=/home/user  shell=True   env=False
-    Teste Criando uma Lista         may   ribeiro   fernandes
-    Teste Criando os dois           may   ribeiro   fernandes    shell=True    env=False
+    Teste Criando uma Lista         Iasmine     Sousa     Silva
+    Teste Criando os dois           Iasmine     Sousa     Silva    shell=True    env=False
 
 *** Keywords ***
 Teste de Argumentos Básico
