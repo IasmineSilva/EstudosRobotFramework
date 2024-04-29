@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-29T12:45:14.234557" rpa="false" schemaversion="5">
+<suite id="s1" name="DateTime" source="c:\Users\iasmi\OneDrive\Documentos\Projetos\EstudosRobotFramework\RobotAvancado\DateTime.robot">
+<test id="s1-t1" name="Exemplo 01: Pegando data e hora atuais" line="6">
+<kw name="Teste pegando data atual">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.277493" level="INFO">${AGORA} = 29-04-24</msg>
+<var>${AGORA}</var>
+<arg>result_format=%d-%m-%y</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.277493" elapsed="0.006701"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.285216" level="INFO">29-04-24</msg>
+<arg>${AGORA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.284194" elapsed="0.001022"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.277493" elapsed="0.007723"/>
+</kw>
+<kw name="Teste pegando data e hora atuais">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.287678" level="INFO">${AGORA} = 2024-04-29T12:45:14</msg>
+<var>${AGORA}</var>
+<arg>result_format=%Y-%m-%dT%H:%M:%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.286677" elapsed="0.001001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.288675" level="INFO">2024-04-29T12:45:14</msg>
+<arg>${AGORA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.288675" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.285216" elapsed="0.003459"/>
+</kw>
+<kw name="Teste pegando ano - mês - dia separadamente">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.290742" level="INFO">${HOJE} = 2024-04-29 12:45:14.291</msg>
+<var>${HOJE}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.289672" elapsed="0.001070"/>
+</kw>
+<kw name="Convert Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.318923" level="INFO">${HOJE} = 2024-04-29 12:45:14.291000</msg>
+<var>${HOJE}</var>
+<arg>${HOJE}</arg>
+<arg>datetime</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.290742" elapsed="0.028181"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.324431" level="INFO">29-4-2024</msg>
+<arg>${HOJE.day}-${HOJE.month}-${HOJE.year}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.318923" elapsed="0.005508"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.289672" elapsed="0.034759"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.276657" elapsed="0.047774"/>
+</test>
+<test id="s1-t2" name="Exemplo 02: Manipulando o tempo" line="11">
+<kw name="Trabalhando com tempo">
+<kw name="Convert Time" owner="DateTime">
+<msg time="2024-04-29T12:45:14.324431" level="INFO">${HORA} = 90.0</msg>
+<var>${HORA}</var>
+<arg>1 minute 30 seconds</arg>
+<doc>Converts between supported `time formats`.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.324431" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.324431" level="INFO">São 90.0 segundos em 1 minuto e 30 segundos!</msg>
+<arg>São ${HORA} segundos em 1 minuto e 30 segundos!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.324431" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Time" owner="DateTime">
+<msg time="2024-04-29T12:45:14.324431" level="INFO">${HORA} = 1 hour 30 minutes</msg>
+<var>${HORA}</var>
+<arg>5400</arg>
+<arg>verbose</arg>
+<doc>Converts between supported `time formats`.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.324431" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.324431" level="INFO">5400 segundos é 1 hour 30 minutes!</msg>
+<arg>5400 segundos é ${HORA}!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.324431" elapsed="0.000000"/>
+</kw>
+<kw name="Convert Time" owner="DateTime">
+<msg time="2024-04-29T12:45:14.330907" level="INFO">${HORA} = 01:31:40</msg>
+<var>${HORA}</var>
+<arg>5500</arg>
+<arg>timer</arg>
+<arg>exclude_millis=yes</arg>
+<doc>Converts between supported `time formats`.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.330004" elapsed="0.000903"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.330907" level="INFO">5500 segundos é 01:31:40!</msg>
+<arg>5500 segundos é ${HORA}!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.330907" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.324431" elapsed="0.006476"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.324431" elapsed="0.009987"/>
+</test>
+<test id="s1-t3" name="Exemplo 03: Cálculos com data" line="14">
+<kw name="Adicionando tempo de data">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">${ANTES} = 2024-04-29 12:45:14.374</msg>
+<var>${ANTES}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<kw name="Add Time To Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">${DEPOIS} = 29-04-2024 16:45:14</msg>
+<var>${DEPOIS}</var>
+<arg>${ANTES}</arg>
+<arg>4 hours</arg>
+<arg>result_format=%d-%m-%Y %H:%M:%S</arg>
+<doc>Adds time to date and returns the resulting date.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">Antes: 2024-04-29 12:45:14.374 - Depois: 29-04-2024 16:45:14</msg>
+<arg>Antes: ${ANTES} - Depois: ${DEPOIS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">${ANTES} = 2024-04-29 12:45:14.374</msg>
+<var>${ANTES}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<kw name="Add Time To Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">${DEPOIS} = 06-05-2024 12:45:14</msg>
+<var>${DEPOIS}</var>
+<arg>${ANTES}</arg>
+<arg>7 days</arg>
+<arg>result_format=%d-%m-%Y %H:%M:%S</arg>
+<doc>Adds time to date and returns the resulting date.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">Antes: 2024-04-29 12:45:14.374 - Depois: 06-05-2024 12:45:14</msg>
+<arg>Antes: ${ANTES} - Depois: ${DEPOIS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.368732" elapsed="0.005508"/>
+</kw>
+<kw name="Subtraindo tempo de data">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">${ANTES} = 2024-04-29 12:45:14.374</msg>
+<var>${ANTES}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Time From Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.374240" level="INFO">${DEPOIS} = 29-04-2024 12:20:14</msg>
+<var>${DEPOIS}</var>
+<arg>${ANTES}</arg>
+<arg>25 minutes</arg>
+<arg>result_format=%d-%m-%Y %H:%M:%S</arg>
+<doc>Subtracts time from date and returns the resulting date.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.380459" level="INFO">Antes: 2024-04-29 12:45:14.374 - Depois: 29-04-2024 12:20:14</msg>
+<arg>Antes: ${ANTES} - Depois: ${DEPOIS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.006219"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.380459" level="INFO">${ANTES} = 2024-04-29 12:45:14.380</msg>
+<var>${ANTES}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.380459" elapsed="0.000000"/>
+</kw>
+<kw name="Subtract Time From Date" owner="DateTime">
+<msg time="2024-04-29T12:45:14.381461" level="INFO">${DEPOIS} = 27-04-2024 12:45:14</msg>
+<var>${DEPOIS}</var>
+<arg>${ANTES}</arg>
+<arg>2 days</arg>
+<arg>result_format=%d-%m-%Y %H:%M:%S</arg>
+<doc>Subtracts time from date and returns the resulting date.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.381461" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-29T12:45:14.381461" level="INFO">Antes: 2024-04-29 12:45:14.380 - Depois: 27-04-2024 12:45:14</msg>
+<arg>Antes: ${ANTES} - Depois: ${DEPOIS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-29T12:45:14.381461" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.374240" elapsed="0.008218"/>
+</kw>
+<status status="PASS" start="2024-04-29T12:45:14.368732" elapsed="0.024216"/>
+</test>
+<doc>http://robotframework.org/robotframework/latest/libraries/DateTime.html</doc>
+<status status="PASS" start="2024-04-29T12:45:14.241860" elapsed="0.154065"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="DateTime">DateTime</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

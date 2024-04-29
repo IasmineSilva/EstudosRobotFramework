@@ -4,7 +4,7 @@ Relembrando argumentos posicionais x nomeados
     Teste de Argumentos Básico     arg4=1   arg3=2   arg2=3   arg1=4
 
 Teste de Argumentos Opcionais
-    Passando argumentos opcionais como parâmetro      nome=Iasmine   ultimo_nome=Silva
+    Passando argumentos opcionais como parâmetro      nome=Iasmine   ultimo_nome=
     Passando argumentos opcionais como parâmetro      nome=Iasmine   nome_do_meio=Sousa     ultimo_nome=Fernandes
 
 Criando lista e dicionário via parâmetro
