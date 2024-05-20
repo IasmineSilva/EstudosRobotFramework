@@ -52,3 +52,5 @@ Subtraindo tempo de data
     ${ANTES}    Get Current Date
     ${DEPOIS}   Subtract Time From Date    ${ANTES}   2 days        result_format=%d-%m-%Y %H:%M:%S
     Log         Antes: ${ANTES} - Depois: ${DEPOIS}
+
+
