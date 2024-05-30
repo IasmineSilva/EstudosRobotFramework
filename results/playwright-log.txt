@@ -1,0 +1,48 @@
+{"level":30,"time":"2024-05-30T19:54:47.531Z","pid":18108,"hostname":"NTB_HOME","msg":"Listening on 63464"}
+(node:18108) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-05-30T19:54:47.829Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:47.829Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:47.832Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:47.833Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:47.836Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-05-30T19:54:48.020Z","pid":18108,"hostname":"NTB_HOME","msg":"Adding browser to stack: chromium, version: 125.0.6422.26"}
+{"level":30,"time":"2024-05-30T19:54:48.020Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-05-30T19:54:48.020Z","pid":18108,"hostname":"NTB_HOME","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-05-30T19:54:48.026Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-05-30T19:54:48.026Z","pid":18108,"hostname":"NTB_HOME","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-05-30T19:54:48.037Z","pid":18108,"hostname":"NTB_HOME","msg":"Changed active context"}
+{"level":30,"time":"2024-05-30T19:54:48.196Z","pid":18108,"hostname":"NTB_HOME","msg":"Video path: undefined"}
+{"level":30,"time":"2024-05-30T19:54:48.196Z","pid":18108,"hostname":"NTB_HOME","msg":"Changed active page"}
+{"level":30,"time":"2024-05-30T19:54:49.911Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method newPage"}
+{"level":30,"time":"2024-05-30T19:54:49.915Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getText"}
+{"level":30,"time":"2024-05-30T19:54:49.916Z","pid":18108,"hostname":"NTB_HOME","msg":"Strict mode is enabled, find Locator with css=.logged-user in page."}
+{"level":30,"time":"2024-05-30T19:54:49.963Z","pid":18108,"hostname":"NTB_HOME","msg":"Retrieved text for element css=.logged-user containing Fernando Papito"}
+{"level":30,"time":"2024-05-30T19:54:49.963Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getText"}
+{"level":30,"time":"2024-05-30T19:54:51.976Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.978Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.980Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.981Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.984Z","pid":18108,"hostname":"NTB_HOME","msg":"Changed active context"}
+{"level":30,"time":"2024-05-30T19:54:51.984Z","pid":18108,"hostname":"NTB_HOME","msg":"Changing current active page: page=cf6dd328-8342-419b-aaec-fe49d5b4e2cf"}
+{"level":30,"time":"2024-05-30T19:54:51.984Z","pid":18108,"hostname":"NTB_HOME","msg":"Changed active page"}
+{"level":30,"time":"2024-05-30T19:54:51.987Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.989Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.991Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-30T19:54:51.991Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-30T19:54:51.992Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-05-30T19:54:51.993Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-05-30T19:54:51.994Z","pid":18108,"hostname":"NTB_HOME","msg":"Changing current active page: page=cf6dd328-8342-419b-aaec-fe49d5b4e2cf"}
+{"level":30,"time":"2024-05-30T19:54:51.994Z","pid":18108,"hostname":"NTB_HOME","msg":"Changed active page"}
+{"level":30,"time":"2024-05-30T19:54:51.997Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.998Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:51.999Z","pid":18108,"hostname":"NTB_HOME","msg":"Changed active context"}
+{"level":30,"time":"2024-05-30T19:54:51.999Z","pid":18108,"hostname":"NTB_HOME","msg":"Changing current active page: page=cf6dd328-8342-419b-aaec-fe49d5b4e2cf"}
+{"level":30,"time":"2024-05-30T19:54:51.999Z","pid":18108,"hostname":"NTB_HOME","msg":"Changed active page"}
+{"level":30,"time":"2024-05-30T19:54:52.001Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-05-30T19:54:52.019Z","pid":18108,"hostname":"NTB_HOME","msg":"Removed page=27145e37-e3f3-4f9d-8447-a2e0a64fcdf5 from context=ed37b6c2-b879-46e8-b9e5-c9663e7a13c3 page stack"}
+{"level":30,"time":"2024-05-30T19:54:52.052Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-05-30T19:54:52.057Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:52.057Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-05-30T19:54:52.102Z","pid":18108,"hostname":"NTB_HOME","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-05-30T19:54:52.257Z","pid":18108,"hostname":"NTB_HOME","msg":"End of node method closeAllBrowsers"}
