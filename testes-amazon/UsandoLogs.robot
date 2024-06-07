@@ -5,7 +5,7 @@ Documentation   Suíte de exmeplo didático para exemplificar o uso de LOGs nos 
 ...             Use LOGs sem moderação!!
 Library         SeleniumLibrary
 
-*** Variable ***
+*** Variables ***
 @{FRUTAS}   maça  banana  uva  abacaxi
 
 *** Test Case ***

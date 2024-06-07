@@ -19,7 +19,7 @@ Exemplo 02: Manipulando a String
 Pega arquivo
     ## Lembrando: O GET FILE retorna o conteúdo do arquivo em STRING!
     ${CONTEUDO_ARQUIVO}    Get File    ./my_files/arquivo_texto_linhas.txt
-    [Return]        ${CONTEUDO_ARQUIVO}
+    RETURN        ${CONTEUDO_ARQUIVO}
 
 Contando as linhas
     ${STRING}       Pega arquivo
