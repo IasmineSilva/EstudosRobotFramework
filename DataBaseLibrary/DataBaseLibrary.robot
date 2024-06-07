@@ -14,7 +14,7 @@ Test Teardown   Desconectar do Banco de Dados
 *** Test Cases ***
 Exemplo 01: Executando scripts SQL via Arquivos
     Executar script via ARQUIVO no Banco de Dados       ${CURDIR}/my_sql_scripts/create_table_accounts.sql
-    Executar script via ARQUIVO no Banco de Dados       ${CURDIR}/my_sql_scripts/insert_into_account.sql
+    Executar script via ARQUIVO no Banco de Dados       ${CURDIR}/my_sql_scripts/insert_into_accounts.sql
     Confere se "May Fernandes" foi inserido com sucesso
 
 Exemplo 02: Executando scripts SQL via STRING
