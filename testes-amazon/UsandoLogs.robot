@@ -3,12 +3,12 @@ Documentation   Suíte de exmeplo didático para exemplificar o uso de LOGs nos 
 ...             Os LOGs são de grande utilidade, faça LOGs para analisar como seu teste está sendo executado nas entrelinhas
 ...             Os LOGs te ajudam a achar falhas na automação dos seus testes
 ...             Use LOGs sem moderação!!
-Library         SeleniumLibrary
+Library        SeleniumLibrary
 
 *** Variables ***
 @{FRUTAS}   maça  banana  uva  abacaxi
 
-*** Test Case ***
+*** Test Cases ***
 Caso de teste exemplo 01
     Usando LOG para mensagens
     Usando LOG Console
