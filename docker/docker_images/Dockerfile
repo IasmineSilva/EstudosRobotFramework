@@ -21,7 +21,6 @@ RUN dnf upgrade -y && dnf install -y python37
 RUN pip3 install \
 robotframework \
 robotframework-faker \
-robotframework-requests==0.5.0 \
+robotframework-requests \
 robotframework-seleniumlibrary \
 robotframework-databaselibrary \
-robotframework-sshlibrary==3.2.1
