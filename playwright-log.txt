@@ -1,0 +1,28 @@
+{"level":30,"time":"2024-06-11T19:22:37.654Z","pid":8244,"hostname":"NTB_HOME","msg":"Listening on 57193"}
+(node:8244) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-06-11T19:22:37.894Z","pid":8244,"hostname":"NTB_HOME","msg":"Start of node method initializeExtension"}
+{"level":30,"time":"2024-06-11T19:22:37.894Z","pid":8244,"hostname":"NTB_HOME","msg":"Initializing extension: C:\\Projetos\\EstudosRobotFramework\\resources\\module.js"}
+================= Original suppressed error =================
+Error: Cannot find module 'C:\Projetos\EstudosRobotFramework\resources\module.js'
+Require stack:
+- c:\Users\iasmi\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at initializeExtension (c:\Users\iasmi\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:9902:36)
+    at PlaywrightServer.initializeExtension (c:\Users\iasmi\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10691:34)
+    at Object.onReceiveHalfClose (c:\Users\iasmi\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1273:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (c:\Users\iasmi\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:534:31)
+    at BaseServerInterceptingCall.handleEndEvent (c:\Users\iasmi\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:576:14)
+    at ServerHttp2Stream.<anonymous> (c:\Users\iasmi\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'c:\\Users\\iasmi\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\Browser\\wrapper\\index.js'
+  ]
+}
+=============================================================
+{"level":30,"time":"2024-06-11T19:22:37.895Z","pid":8244,"hostname":"NTB_HOME","msg":"Error of node method  initializeExtension"}
+{"level":30,"time":"2024-06-11T19:22:38.362Z","pid":8244,"hostname":"NTB_HOME","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-06-11T19:22:38.362Z","pid":8244,"hostname":"NTB_HOME","msg":"End of node method closeAllBrowsers"}
